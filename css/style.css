@@ -1,0 +1,84 @@
+@import url(./components.css);
+@import url(./global.css);
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+.header-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+.menu-list {
+  display: flex;
+  transition: 0.3s;
+  animation: entrance 1s ease-in-out;
+}
+.menu-list li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.menu-list a {
+  margin: 0 5px;
+  padding: 10px 2.5rem;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--clr-white);
+  transition: 0.5s;
+}
+.menu-list a:hover {
+  border-radius: 50px;
+  background-color: #ff6f6d;
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5rem;
+  text-align: left;
+}
+.intro-content p {
+  max-width: 50ch;
+  margin-top: 20px;
+}
+.button {
+  max-width: 150px;
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  border-radius: 3.125rem;
+  background-color: var(--clr-pmry-purple);
+  text-align: center;
+  letter-spacing: 0;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #ff6f6d;
+}
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/hero-tech.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: fixed;
+  right: -25rem;
+  z-index: -1;
+  animation: entrance 1s ease-in-out;
+}
+@keyframes entrance {
+  0% {
+    top: -100rem;
+    opacity: 0;
+    transform: rotateX(160deg);
+  }
+  50% {
+    opacity: 5;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}

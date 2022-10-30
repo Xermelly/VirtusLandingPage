@@ -1,0 +1,28 @@
+:root {
+  --clr-pmry-purple: #af63f9;
+  --clr-ntrl-gray: #86888A: ;
+  --clr-white: #fff;
+  --font-montserrat-300: 300 1rem/1 "Montserrat", sans-serif;
+  --font-montserrat-400: 400 1rem/1.5 "Montserrat", sans-serif;
+  --font-montserrat-700: 700 4rem/1 "Montserrat", sans-serif;
+}
+.color-pmry-purple{
+  color: var(--clr-pmry-purple);
+}
+.color-ntrl-gray{
+  color: var(--clr-ntrl-gray);
+}
+.color-white{
+  color: var(--clr-white);
+}
+.font-montserrat-300{
+  font: var(--font-montserrat-300);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.font-montserrat-400{
+  font: var(--font-montserrat-400);
+}
+.font-montserrat-700{
+  font: var(--font-montserrat-700);
+}
